@@ -1,0 +1,268 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(194, 197, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 100px; /* Add padding to the top of the page */
+}
+
+.balloons h1 {
+    font-family: 'LovelyBalloon', sans-serif;
+    font-size: 13rem;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.couponsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%; /* Adjust the top position as needed */
+    width: 100%;
+    
+}
+
+.couponsHeader h1 {
+    position: absolute;
+    top: 0px; /* Adjust the distance from the top as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    font-family: 'AlwaysAmora', sans-serif;
+    color: rgb(51, 61, 41);
+    font-size: 10rem;
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0;
+    padding: 0;
+    font-family: 'AlwaysAmora', sans-serif;
+
+}
+
+.balloons h1 span {
+    display: inline-block;
+    opacity: 0;
+}
+
+.balloons h1 span.H {
+    animation: floatUp 10s linear 0s 1 forwards;
+}
+
+.balloons h1 span.a1 {
+    animation: floatUp 11s linear 0s 1 forwards;
+}
+
+.balloons h1 span.p1 {
+    animation: floatUp 10s linear 0s 1 forwards;
+}
+
+.balloons h1 span.p2 {
+    animation: floatUp 11s linear 0s 1 forwards;
+}
+
+.balloons h1 span.y1 {
+    animation: floatUp 12s linear 0s 1 forwards;
+}
+
+.balloons h1 span.V {
+    animation: floatUp 11s linear 0s 1 forwards;
+}
+
+.balloons h1 span.a2 {
+    animation: floatUp 12s linear 0s 1 forwards;
+}
+
+.balloons h1 span.l {
+    animation: floatUp 10s linear 0.5s 1 forwards;
+}
+
+.balloons h1 span.e {
+    animation: floatUp 10s linear 1s 1 forwards;
+}
+
+.balloons h1 span.n {
+    animation: floatUp 10s linear 0.5s 1 forwards;
+}
+
+.balloons h1 span.t {
+    animation: floatUp 10s linear 1s 1 forwards;
+}
+
+.balloons h1 span.i {
+    animation: floatUp 10.5s linear 0.5s 1 forwards;
+}
+
+.balloons h1 span.n {
+    animation: floatUp 12s linear 0s 1 forwards;
+}
+
+.balloons h1 span.e {
+    animation: floatUp 11s linear 0.5s 1 forwards;
+}
+
+.balloons h1 span.s {
+    animation: floatUp 11s linear 0s 1 forwards;
+}
+
+.balloons h1 span.D {
+    animation: floatUp 12s linear 0s 1 forwards;
+}
+
+.balloons h1 span.a3 {
+    animation: floatUp 10s linear 1.5s 1 forwards;
+}
+
+.balloons h1 span.y2 {
+    animation: floatUp 11s linear 1s 1 forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-230vh);
+    }
+}
+
+.balloons {
+    position: relative; /* Set the position of the balloons container to relative */
+    z-index: 2; /* Set a higher z-index value to ensure the balloons appear above other elements */
+}
+
+@font-face {
+    font-family: 'LovelyBalloon';
+    src: url('fonts/LovelyBalloon.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlwaysAmora';
+    src: url('fonts/AlwaysAmora.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'elizajane';
+    src: url('fonts/elizajane.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.coupon {
+    width: 300px;
+    background-color: rgb(164, 172, 134);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'elizajane', sans-serif;
+}
+
+.coupon button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Specific elements inside the coupon */
+.coupon h2 {
+    font-family: 'elizajane', sans-serif; /* Apply elizajane font */
+    /* Other styles for the h2 element */
+    color: rgb(51, 61, 41);
+}
+
+.coupon p {
+    font-family: 'elizajane', sans-serif; /* Apply elizajane font */
+    /* Other styles for the p element */
+    color: rgb(51, 61, 41);
+}
+
+.coupon button {
+    font-family: 'elizajane', sans-serif; /* Apply elizajane font */
+    /* Other styles for the button element */
+    color: rgb(51, 61, 41);
+}
+
+.resetButton {
+    position: relative;
+    left: 320px;
+}
+
+#couponDisplay {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 200px auto 0; /* Center the coupon display horizontally and add margin at the top */
+    padding: 0 20px; /* Add padding to the sides of the coupon display */
+    display: flex; /* Use flexbox to layout the coupons */
+    flex-wrap: wrap; /* Allow the coupons to wrap to the next line */
+    justify-content: space-between; /* Distribute the space between coupons */
+    margin-top: 200px;
+}
+
+
+.coupon {
+    flex: 0 0 calc(45% - 20px); /* Adjust the width of each coupon */
+    background-color: rgb(164, 172, 134);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'elizajane', sans-serif;
+}
+
+#termsAndConditions {
+    width: 1150px;
+    background-color: rgb(164, 172, 134);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'elizajane', sans-serif;
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+#termsAndConditions h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333; /* Adjust the color as needed */
+}
+
+#termsAndConditions p {
+    font-size: 1rem;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 15px;
+}
+
+#termsAndConditions input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#termsAndConditions label {
+    font-size: 0.9rem;
+    color: #333; /* Adjust the color as needed */
+    display: inline-block; /* Ensures checkbox and label are aligned */
+}
+
+
+
+
+
+
+
+
+
+
+
