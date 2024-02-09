@@ -199,7 +199,6 @@ body {
 
 .resetButton {
     position: relative;
-    left: 320px;
 }
 
 #couponDisplay {
@@ -254,6 +253,29 @@ body {
     font-size: 0.9rem;
     color: #333; /* Adjust the color as needed */
     display: inline-block; /* Ensures checkbox and label are aligned */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .balloons h1 {
+        font-size: 9rem; /* Adjust font size for smaller screens */
+    }
+
+    .couponsHeader h1 {
+        font-size: 6rem; /* Adjust font size for smaller screens */
+    }
+
+    .coupon {
+        width: 250px; /* Adjust coupon width for smaller screens */
+    }
+
+    #couponDisplay {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    #termsAndConditions {
+        width: 90%; /* Adjust width for smaller screens */
+    }
 }
 
 @media screen and (max-width: 480px) {
