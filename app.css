@@ -256,6 +256,29 @@ body {
     display: inline-block; /* Ensures checkbox and label are aligned */
 }
 
+@media screen and (max-width: 480px) {
+    .balloons h1 {
+        font-size: 6rem; /* Further adjust font size for smaller screens */
+    }
+
+    .couponsHeader h1 {
+        font-size: 4rem; /* Further adjust font size for smaller screens */
+    }
+
+    .coupon {
+        width: 200px; /* Further adjust coupon width for smaller screens */
+    }
+
+    #couponDisplay {
+        max-width: 100%; /* Adjust maximum width for smaller screens */
+    }
+
+    #termsAndConditions {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
+
+
 
 
 
