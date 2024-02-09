@@ -197,10 +197,6 @@ body {
     color: rgb(51, 61, 41);
 }
 
-.resetButton {
-    position: relative;
-}
-
 #couponDisplay {
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin: 200px auto 0; /* Center the coupon display horizontally and add margin at the top */
